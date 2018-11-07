@@ -8,6 +8,7 @@
 <!-- =============== Exercise 1 =================== -->
 <!-- After writing your name in input field press Enter -->
 
+<!-- Ans:After pressing enter Nothing happens.-->
 <!--<input type="text" name="name">-->
 
 
@@ -15,7 +16,7 @@
 <!-- =============== Exercise 2 =================== -->
 <!-- After writing your name in input field press Enter,
         check URL, is it updated ? -->
-
+<!--Ans:Yes ,the URL is updated with my name.-->
 <!--<form>
     <input type="text" name="name">
 </form>-->
@@ -25,6 +26,7 @@
 <!-- =============== Exercise 3 =================== -->
 <!-- After writing your name in input field press Submit button,
         is clicking submit different than pressing enter ? -->
+<!--Ans:No,there's no difference ,They are doing the same thing.-->
 
 <!--<form>
     <input type="text" name="name">
@@ -37,7 +39,9 @@
 <!-- After writing your name and registration number in input fields,
         press Submit button, is the URL is same now ? -->
 
-<!--<form action="/my-handling-form-page">
+<!--Ans:Yes,the URL is changed by my credentials,plus when i entered the submit button A 404 page loaded..-->
+<!--
+<form action="/my-handling-form-page">
     <input type="text" name="name">
     <input type="text" name="reg">
     <input type="submit">
@@ -47,7 +51,7 @@
 <!-- =============== Exercise 5 =================== -->
 <!-- After writing some text in input field,
         press Submit button,  what happens? -->
-
+<!--   Ans: Here we are using a tag called "ACTION" which brings out the results from google whatever is written in the input field.-->
 <!--<form action="http://www.google.com/search">
     <input type="text" name="q">
     <input type="submit">
@@ -58,6 +62,10 @@
 <!-- =============== Exercise 6 =================== -->
 <!-- After writing "top web language" in input field,
         press Submit button,  what is the value of q parameter in URL ? -->
+
+<!-- Ans: The value of q=top+web+language after pressing submit.
+Its doing the same thing wat above statement is doing.
+Maybe its concatinating the string that we enter in the input field-->
 
 <!--<form action="http://www.google.com/search">
     <input type="text" name="q">
@@ -73,6 +81,9 @@
 <!-- After writing "Imran Khan!" in input field,
         press Submit button,  what is the value of q parameter in URL ? -->
 
+
+<!--Ans: The value of q=Imran+Khan%21 .Just like the above one .! mark is doing something different in this case maybe
+it's the ascii.-->
 <!--<form action="http://www.google.com/search">
     <input type="text" name="q">
     <input type="submit">
@@ -87,7 +98,8 @@
         Where did the "q" parameter go ?
         (Please check in "google chrome developers tool"
         under "Network" tab )-->
-
+<!--Ans:Well,yes it threw a error code and didn;t showed the result,it has something to do with
+"method" thingy and /form handler,when i removed it it worked fine.-->
 <!--<form action="/form-handler" method="post">
     <input type="text" name="q">
     <input type="submit">
@@ -97,7 +109,8 @@
 <!-- =============== Exercise 9 =================== -->
 <!-- After writing some text in input field,
         press Submit button,  what is the value of q parameter in URL ? -->
-
+<!--Ans:As I typed hello world ,that's y the vale of q=hello+world.Plus
+in the type we used password which forced the text not be shown to user.-->
 <!--<form action="/my-handling-form-page" method="get">
     <input type="password" name="q">
     <input type="submit">
@@ -108,6 +121,8 @@
 <!-- After selecting and un-selecting checkbox,
         press Submit button,  what is the value of "g" parameter in URL
         in both cases ? -->
+<!--Ans:Selecting the checkbox made the value of g=on, where as in case of unselecting checkbox no value was assingned
+to g.-->
 
 <!--<form action="/my-handling-form-page" method="get">
     <input type="checkbox" name="g">
@@ -120,7 +135,7 @@
 <!-- After selecting first 2 checkboxes,
         press Submit button,  what does query section of URL look like ?
 -->
-
+<!--Ans:The qurey looks like this g=on&h=on,which means that both of the checkboxes are checked.-->
 <!--<form action="/my-handling-form-page" method="get">
     <input type="checkbox" name="g">
     <input type="checkbox" name="h">
@@ -136,6 +151,10 @@
 <!-- After selecting all radio buttons,
         press Submit button,  what does query section of URL look like ?
 -->
+
+<!--Ans: The qurey looks like this g=on&h=on&q=on .Just the apperence of the checkbox is different coz
+of the tag.-->
+
 
 <!--<form action="/my-handling-form-page" method="get">
     <input type="radio" name="g">
@@ -153,6 +172,8 @@
         press Submit button,  what is the value of "q" parameter in URL ?
 -->
 
+<!--Ans: The qurey is q=two ,coz in this we also gave value of it.
+-->
 <!--<form action="/my-handling-form-page" method="get">
     <input type="radio" name="q" value="one">
     <input type="radio" name="q" value="two">
@@ -167,6 +188,7 @@
         press Submit button,  what is the value of "q" parameter in URL ?
 -->
 
+<!--Ans:"Q" parameter value is three ,because we have asigned it with vale of THREE.-->
 <!--<form action="/my-handling-form-page" method="get">
     <label> One
         <input type="radio" name="q" value="one">
@@ -189,7 +211,7 @@
 <!-- After selecting "two" from the drop-down,
         press Submit button,  what is the value of "q" parameter in URL ?
 -->
-
+<!--Ans:Q is "two " beasuse two is the value that is assigned to it.-->
 <!--<form action="/my-handling-form-page" method="get">
     <select name="q">
         <option>one</option>
@@ -212,15 +234,18 @@
      After selecting "the last three" from the drop-down,
         press Submit button,  what is the value of "q" parameter in URL ?
 -->
+<!--Ans: when "the number one" was selected q was"1",coz of the value assigned to it.
+in case of "the last three q=the+last+three" not sure why that happened.No value is assigned to it ,that's
+maybe it's just telling us that which option is selected.-->
 
-<!--<form action="/my-handling-form-page" method="get">
-    <select name="q">
-        <option value="1">the number one</option>
-        <option value="2">the middle two</option>
-        <option>the last three</option>
-    </select>
-    <br><br>
-    <input type="submit">
+<!-- <form action="/my-handling-form-page" method="get">
+ <select name="q">
+     <option value="1">the number one</option>
+     <option value="2">the middle two</option>
+     <option>the last three</option>
+ </select>
+ <br><br>
+ <input type="submit">
 </form>-->
 
 </body>

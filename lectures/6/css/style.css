@@ -4,3 +4,128 @@
 a {
     color: #70579D;
 }
+
+#main
+{
+    max-width: 800px;
+    margin: auto;
+
+}
+.article
+{
+
+    border: 1px whitesmoke;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 0 10px 0;
+
+   background-color: whitesmoke;
+}
+.article-name h1
+{
+    font-size: 35px;
+    font-family: "Freestyle Script";
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+
+}
+.article-opt
+{
+    float: right;
+    height: 24px;
+    text-align: center;
+    line-height: 3.5;
+    width: 24px;
+    border-radius: 50%;
+}
+.article-opt:hover
+{
+    color: red;
+}
+.article-overview
+{
+    font-size: 95%;
+}
+.article-overview a
+{
+    text-decoration: none;
+}
+.article-overview a:hover
+{
+    text-decoration: underline;
+}
+.pipe
+{
+    color: #cccccc;
+    margin: 0 10px;
+}
+.text-muted{
+    opacity: 0.8;
+}
+.text-small
+{
+    font-size: 75%;
+}
+.lister-list
+{
+    width: 100%;
+    margin-top: 4%;
+}
+.lister-list>.lister-item
+{
+    background-color:skyblue;
+    margin-bottom: 3px;
+    padding: 10px 10px 10px;
+}
+.lister-list>.lister-item>.lister-item-image
+{
+    display: inline-block;
+}
+.lister-list>.lister-item>.lister-item-image img
+{
+    box-shadow: 3px 2px 3px 1px rgba(0,0,0,0.5);
+    height: 200px;
+    width:120px;
+}
+.lister-list>.lister-item>.lister-item-content
+{
+    width: 80%;
+    float: right;
+}
+.lister-list>.lister-item>.lister-item-content>h3
+{
+    margin: 0 0 0 .5em;
+    padding: 0;
+}
+.lister-list>.lister-item>.lister-item-content>h3>a
+{
+    color: darkviolet;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Charmonman', cursive;
+    letter-spacing: 3px;
+}
+.lister-list>.lister-item>.lister-item-content>h3>.lister-item-year
+{
+    font-size: small;
+    font-weight: normal;
+}
+.lister-list>.lister-item>.lister-item-content>.lister-item-summary
+{
+    line-height: 120%;
+    font-size: 13px;
+}
+.lister-list>.lister-item>.lister-item-content>.lister-item-summary::first-letter
+{
+    color: red;
+    font-size: 1.3em;
+}
+p.lister-item-summary::selection
+{
+    color: yellow;
+    background: red;
+}
+.lister-list>.lister-item>.lister-item-content a{
+    text-decoration: none;
+    color: darkred;
+}
