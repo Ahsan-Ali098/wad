@@ -4,11 +4,12 @@
 
 
 /*var todos = [];
-function add() {
+function add()
+{
     var task = document.getElementById("task").value;
     todos.push(task);
     document.getElementById('todos').innerText = todos;
-}*/
+}*?
 
 
 //============================================
@@ -93,7 +94,7 @@ show();
 //============================================
 
 
-/*function getTodos() {
+function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
     if(todos_str !== null)
@@ -137,11 +138,18 @@ function show() {
             '<button class="btn btn-danger" id="' + i + '">' +
             '<i class="fa fa-trash-o"></i> ' +
             '<span class="d-none d-sm-inline"> Delete </span> </button>';
+        li.innerHTML  = '<li>' + todos[i].task + '</li>' +
+            '<button class="btn btn-danger" style="margin-right: 50px" id="' + i + '">' +
+            '<i class="fa fa-trash-o"></i> ' +
+            '<span class="d-none d-sm-inline"> Edit </span> </button>';
+
+
         li.classList.add("list-group-item");
         if(todos[i].isDone)
             li.classList.add("done");
         ul.appendChild(li);
     }
+
     document.getElementById('todos').appendChild(ul);
     var buttons = document.getElementsByClassName('btn-danger');
     for(var i=0; i<buttons.length; i++){
@@ -162,7 +170,7 @@ function isDone(e) {
     localStorage.setItem('todo',JSON.stringify(todos));
     show();
 }
-show();*/
+show();
 
 
 
