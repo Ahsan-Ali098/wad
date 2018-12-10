@@ -19,7 +19,7 @@ var withdraw;
 function depositamount(event)
 {
     deposit= document.getElementById("deposit");
-    if(event.keycode==13||c.key=="Enter")
+    if(event.keycode===13||c.key=="Enter")
     {
         //newDate();
         //.createElement();
@@ -36,6 +36,13 @@ function withdrawamount(c)
         // AvailibleBalance=AvailibleBalance-withdraw;
         balance.innerHTML=AccountDetails[currentUser].AvailibleBalance;
     }
+
+
+}
+function transtion()
+{
+    new Date();
+    .createElement();
 
 
 }
