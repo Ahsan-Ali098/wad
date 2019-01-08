@@ -1,14 +1,14 @@
-/*function  showAlertBox() {
+function  showAlertBox() {
     alert("Display Message")
-}*/
+}
 
 
-/*
+
 function  displayName(name) {
     alert("My Name is " + name);
 }
-*/
-/* Parameter vs Argument */
+
+ /*arameter vs Argument*/
 /*function  show Message() {
     console.log("A message to the console");
 }*/
